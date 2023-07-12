@@ -22,3 +22,17 @@ test_loader = DataLoader(dataset=test_data, batch_size=32, shuffle=False)
 len(train_loader), len(test_loader), train_loader.batch_size
 
 
+=========================================================================================================================================================
+
+# Following is just an example to view your data loading and spliting 
+
+# next(iter(train_loader)) is used to fetch the next batch of data from the train_loader DataLoader object.
+# It allows you to iterate over the dataset in batches in the DataLoader.
+features, labels = next(iter(train_loader))
+features.shape, labels.shape
+
+fig = plt.figure(figsize=(3,3))
+random_it = torch.randint(0, len(features), size=[1]).item()
+img, label = features[random_it], labels[random_it]
+plt.imshow(img.squeeze())
+plt.axis(False)
