@@ -21,6 +21,6 @@ The following is the preview of images that have been feed to model for classifi
 
 ## Model Prediction
 
-The Model has performed well within the desired prediction range with only 3 epoch runs 
+The Model has performed well within the desired prediction expectations with only 4 epoch runs and these results were achived from ADAM optimizer faster compare to others.
 
-![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/e6d3fb28-869e-4aad-a821-f433b7269408)
+![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/28bf9013-af64-4ccb-b12e-cdb75678a9f6)
