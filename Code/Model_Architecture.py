@@ -20,19 +20,11 @@ class CompVision(nn.Module):
         nn.MaxPool2d(kernel_size=2)
     )
 
-    
-
 
     self.classifier = nn.Sequential(
         nn.Flatten(),
         nn.LazyLinear(out_features=output)
     )
-
-  def cal_inlayear(self):
-    dummy = torch.rand([1,1,28,28])
-    data =  self.conv_block1(dummy)
-    data = self.conv_block2(data)
-    return int(np.prod(data.size()))
 
   def forward(self, x):
     step = self.conv_block1(x)
@@ -49,7 +41,7 @@ class CompVision(nn.Module):
 # But I have noticied some discrepencies results while running model in same data on different days, Since this module is still in development in case of error, try using following fuction as it does the same job. 
 
 
-
+# The value of 'indims' can be added for nn.Linear() in_features replacing 'nn.LazyLinear' i.e "nn.Linear(in_features=indims, out_features=output)
 indims = self.cal_inlayear()
 
 def cal_inlayear(self):
