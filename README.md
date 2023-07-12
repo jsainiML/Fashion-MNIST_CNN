@@ -21,6 +21,6 @@ The following is the preview of images that have been feed to model for classifi
 
 ## Model Prediction
 
-The Model has perfromed well within
+The Model has performed well within the desired prediction range with only 3 epoch runs 
 
 ![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/e6d3fb28-869e-4aad-a821-f433b7269408)
