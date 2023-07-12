@@ -8,7 +8,7 @@ optimizer = torch.optim.Adam(params=model1.parameters(), lr=0.01)
 start_time = timer() # Is helpful noting the time difference when the hyperparameters are tweaked and CPUs/GPUs output is needed to be tracked.
 
 Acc = Accuracy(task="multiclass", num_classes=784)
-epochs = 3
+epochs = 4
 trainbatchloss = 0
 testbatchloss = 0
 
