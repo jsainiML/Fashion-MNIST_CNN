@@ -19,3 +19,8 @@ The following is the preview of images that have been feed to model for classifi
 ![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/a2e01479-ba31-4c99-ac52-271f6575fd75)
 
 
+## Model Prediction
+
+The Model has perfromed well within
+
+![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/e6d3fb28-869e-4aad-a821-f433b7269408)
