@@ -46,7 +46,7 @@ class CompVision(nn.Module):
 ====================================================================================================================================================
 
 # On side note: In above structure I have used nn.Lazylinear() module to inherit shape from previous function which remove the manual calculations troubles.
-# But I have noticied some discrepencies results while running model in same data on different days, Since this function is still in development in case of error, try using following fuction does the same job. 
+# But I have noticied some discrepencies results while running model in same data on different days, Since this module is still in development in case of error, try using following fuction as it does the same job. 
 
 
 
