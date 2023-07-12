@@ -9,22 +9,20 @@ class CompVision(nn.Module):
         nn.ReLU(),
         nn.Conv2d(in_channels=hiden, out_channels=hiden, kernel_size=3, stride=1, padding=1),
         nn.ReLU(),
-        nn.MaxPool2d(kernel_size=2)
-    )
-
+        nn.MaxPool2d(kernel_size=2))
+    
+# Since the image shape is (1,28,28) keping the block 2 same proved effective, but incase of higher image size this can be altered
     self.conv_block2 = nn.Sequential(
         nn.Conv2d(in_channels=hiden, out_channels=hiden, kernel_size=3, stride=1, padding=1),
         nn.ReLU(),
         nn.Conv2d(in_channels=hiden, out_channels=hiden, kernel_size=3, stride=1, padding=1),
         nn.ReLU(),
-        nn.MaxPool2d(kernel_size=2)
-    )
+        nn.MaxPool2d(kernel_size=2))
 
 
     self.classifier = nn.Sequential(
         nn.Flatten(),
-        nn.LazyLinear(out_features=output)
-    )
+        nn.LazyLinear(out_features=output))
 
   def forward(self, x):
     step = self.conv_block1(x)
@@ -45,7 +43,7 @@ class CompVision(nn.Module):
 indims = self.cal_inlayear()
 
 def cal_inlayear(self):
-    dummy = torch.rand([1,1,28,28])
+    dummy = torch.rand([1,1,28,28])  # Please note the dummy image should be same size of your input image. 
     data =  self.conv_block1(dummy)
     data = self.conv_block2(data)
     return int(np.prod(data.size()))
