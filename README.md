@@ -1,1 +1,1 @@
-# Fashion-MNIST_CNN
+# Fashion-MNIST Convolutional neural net model 
