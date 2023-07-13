@@ -24,3 +24,5 @@ The following is the preview of images that have been feed to model for classifi
 The Model has performed well within the desired prediction expectations with only 4 epoch runs and these results were achived from ADAM optimizer faster compare to others.
 
 ![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/28bf9013-af64-4ccb-b12e-cdb75678a9f6)
+
+![image](https://github.com/jsainiML/Fashion-MNIST_CNN/assets/135480841/9ebdbfbc-93ab-4d2d-8eea-c4c1abc26cec)
